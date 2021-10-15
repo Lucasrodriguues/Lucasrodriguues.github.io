@@ -108,6 +108,7 @@ li {
     color: #ffffff;
     min-height: 100vh;
     font-family: "Coolvetica";
+    padding: 10px;
 }
 
 .img-eu {
@@ -186,16 +187,14 @@ li {
 
     .logos {
         width: 90%;
-    justify-content: space-between;
-    align-items: center;
-    display: grid; 
-    grid-template-columns: 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
-    gap: 25px 0px; 
-    grid-template-areas: 
-    ". ."
-    ". ."
-    ". ."
-    ". .";
+        display: grid; 
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 25px 0px; 
+        grid-template-areas: 
+        ". ."
+        ". ."
+        ". ."
+        ". .";
     }
 }
