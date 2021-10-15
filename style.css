@@ -14,12 +14,32 @@ a {
     text-decoration: none;
 }
 
+.menu-mobile {
+    position: fixed;
+    background-color: #1c1c1c;
+    height: 100%;
+    width: 0;
+    right: 0;
+    transition: width 0.4s;
+}
+
+.menu-mobile * {
+    list-style-type: none;
+    color: #ffffff; 
+    font-family: "ChunkfiveEx";
+    height: 40px; 
+    padding: 20px 10px;
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 10px;   
-    background-color:#000000;
+    background-color:#1c1c1c;
     border: 0;
     font-family: "ChunkfiveEx";
     height: 8vh;
@@ -178,7 +198,7 @@ li {
 }
 
 .footer {
-    background-color: #000000;
+    background-color: #1c1c1c;
 }
 
 .ultimo {
@@ -203,5 +223,13 @@ li {
         ". ."
         ". ."
         ". .";
+    }
+
+    .navbar-fixed-top {
+        display: none;
+    }
+
+    .icone-menu {
+        display: flex;
     }
 }
