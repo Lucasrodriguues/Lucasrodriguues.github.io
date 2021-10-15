@@ -14,10 +14,6 @@ a {
     text-decoration: none;
 }
 
-* {
-    font-family: "ChunkfiveEx";
-}
-
 .header {
     display: flex;
     justify-content: space-between;
@@ -25,6 +21,8 @@ a {
     padding: 10px 10px;   
     background-color:#000000;
     border: 0;
+    font-family: "ChunkfiveEx";
+
 }
 
 h1 {
@@ -64,11 +62,16 @@ li {
 
 .imagem-inicial {
     height: 90vh;
-    background-image: url(imagemmtfoda.jpg);
+    background-image: url(imagemBanner.jpg);
     background-size: cover;
     background-position: center;
     background-color: #FFFFFF;
-    align-items: center;
+    font-family: "Coolvetica";
+}
+
+.imagem-inicial {
+    text-align: center;
+    color: #ffffff;
 }
 
 .exemplo {
@@ -82,6 +85,7 @@ li {
     text-align: center;
     color: #ffffff;
     height: 105vh;
+    font-family: "Coolvetica";
 }
 
 .img-eu {
@@ -98,25 +102,39 @@ li {
     background-color: #1C1C1C;
     color: #ffffff;
     height: 100vh;
+    font-family: "Coolvetica";
 } 
 
 .logos {
-    display: flex;
-    width: 80%;
-    justify-content: space-around;
+    width: 90%;
+    justify-content: space-between;
     align-items: center;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 25px 0px; 
+    grid-template-areas: 
+    ". . ."
+    ". . .";
+}
+
+.logos > * {
+    padding: 80px 0;
+    display: flex;
+    justify-content: center;
 }
 
 .contato {
     background-color: #1C1C1C;
     color: #FFFFFF;
     text-align: center;
+    font-family: "Coolvetica";
 }
 
 .logos-contato {
     display: flex;
+    width: 100%;
     justify-content: space-evenly;
-    align-items: center;
 }
 
 .footer {
