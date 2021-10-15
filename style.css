@@ -22,7 +22,7 @@ a {
     background-color:#000000;
     border: 0;
     font-family: "ChunkfiveEx";
-
+    height: 8vh;
 }
 
 h1 {
@@ -61,11 +61,16 @@ li {
 }
 
 .imagem-inicial {
-    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 90vh;
     background-image: url(imagemBanner.jpg);
     background-size: cover;
     background-position: center;
     background-color: #FFFFFF;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     font-family: "Coolvetica";
 }
 
@@ -74,17 +79,34 @@ li {
     color: #ffffff;
 }
 
+.primeira-mensagem {
+    font-size: 50px;
+    font-family: "AltoneTrial";
+}
+
+.arrow-icon {
+    margin-bottom: 10px;
+    background-color: #623f65;
+    border-radius: 50%;
+    width: 54px;
+    transform: rotate(90deg);
+}
+
 .exemplo {
     scroll-behavior: smooth;
+}
+
+.main-content {
+    background: rgb(28,28,28);
+    background: linear-gradient(184deg, rgba(28,28,28,1) 43%, rgba(54,45,61,1) 100%);
 }
 
 .sobre-mim {
     display: flex;
     flex-direction: column;
-    background-color: #1C1C1C;
     text-align: center;
     color: #ffffff;
-    height: 105vh;
+    min-height: 100vh;
     font-family: "Coolvetica";
 }
 
@@ -99,7 +121,6 @@ li {
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #1C1C1C;
     color: #ffffff;
     min-height: 100vh;
     font-family: "Coolvetica";
@@ -124,7 +145,7 @@ li {
     justify-content: center;
 }
 
-.logos > *, .logos-contato > * {
+.logos > *, .logos-contato > *, .arrow-icon {
     transition: all 0.2s;
 }
 
@@ -132,8 +153,11 @@ li {
     transform: scale(1.1);
 }
 
+.arrow-icon:hover {
+    transform: rotate(90deg) scale(1.1);
+}
+
 .contato {
-    background-color: #1C1C1C;
     color: #FFFFFF;
     text-align: center;
     font-family: "Coolvetica";
