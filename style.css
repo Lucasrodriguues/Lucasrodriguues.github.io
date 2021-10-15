@@ -54,6 +54,10 @@ li {
     text-align: -webkit-match-parent;
 }
 
+.icone-menu {
+    display: none;
+}
+
 .content {
     display: flex;
     flex-direction: column;
