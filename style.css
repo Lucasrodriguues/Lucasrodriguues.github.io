@@ -26,7 +26,6 @@ a {
 }
 
 h1 {
-   
     color: #ffffff;
 }
 
@@ -113,6 +112,10 @@ li {
     min-height: 100vh;
     font-family: "Coolvetica";
     padding: 10px;
+}
+
+.eu {
+    max-width: 100%;
 }
 
 .img-eu {
