@@ -124,6 +124,14 @@ li {
     justify-content: center;
 }
 
+.logos > *, .logos-contato > * {
+    transition: all 0.2s;
+}
+
+.logos > *:hover, .logos-contato > *:hover {
+    transform: scale(1.1);
+}
+
 .contato {
     background-color: #1C1C1C;
     color: #FFFFFF;
